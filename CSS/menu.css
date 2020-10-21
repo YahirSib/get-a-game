@@ -1,0 +1,201 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+body{
+	background-color: black;
+	overflow-x: hidden;
+}
+#menu{
+    position: relative;
+    left: 0%;
+   background: rgba(4,115,186,1);
+background: -moz-linear-gradient(left, rgba(4,115,186,1) 0%, rgba(4,163,205,1) 59%, rgba(4,163,205,1) 80%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(4,115,186,1)), color-stop(59%, rgba(4,163,205,1)), color-stop(80%, rgba(4,163,205,1)));
+background: -webkit-linear-gradient(left, rgba(4,115,186,1) 0%, rgba(4,163,205,1) 59%, rgba(4,163,205,1) 80%);
+background: -o-linear-gradient(left, rgba(4,115,186,1) 0%, rgba(4,163,205,1) 59%, rgba(4,163,205,1) 80%);
+background: -ms-linear-gradient(left, rgba(4,115,186,1) 0%, rgba(4,163,205,1) 59%, rgba(4,163,205,1) 80%);
+background: linear-gradient(to right, rgba(4,115,186,1) 0%, rgba(4,163,205,1) 59%, rgba(4,163,205,1) 80%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0473ba', endColorstr='#04a3cd', GradientType=1 );
+    color: white;
+    height: 10vh;
+    text-align: center;
+    top: 0%;
+    overflow: hidden;
+}
+#menu ul{
+    margin:0%;
+	list-style:none;
+	padding:0;
+    display:flex;
+    justify-content: center;
+}
+#menu li{
+    display: block;
+	padding: 3vh 5vw;
+	color:white;
+    text-decoration:none;
+    text-align: center;
+    line-height: 5vh;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    color: white;
+}
+#menu li:hover{
+    background-color: #de2c76;
+    color: white;
+}
+#perfil{
+    margin-top: 1vh;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 5vh;
+  float: right;
+  }
+  .hamburger{
+	position: relative;
+  background-color:transparent;
+	left:0;
+	top:0;
+	height:10vh;
+	width:10vw;
+	padding-top: 4vh;
+	padding-left: 5vw;
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	-webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	z-index:1002;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	justify-content: center;
+	text-align: center;
+}
+.hamburger.is-active{
+  background-color:none;
+}
+._layer{
+	background:white;
+	margin-bottom:0.5vh;
+	border-radius:2px;
+	width:5vw;
+	height:0.5vh;
+	min-width: 28px;
+	min-height: 4px;
+	opacity:1;
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	-webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+}
+.hamburger:hover .-top{
+	-webkit-transform:translateY(-100%);
+	-ms-transform:translateY(-100%);
+	transform:translateY(-100%);
+}
+.hamburger:hover .-bottom{
+	-webkit-transform:translateY(100%);
+	-ms-transform:translateY(100%);
+	transform:translateY(100%);
+	}
+.hamburger.is-active .-top{
+	-webkit-transform:translateY(200%) rotate(45deg) !important;
+	-ms-transform:translateY(200%) rotate(45deg) !important;
+	transform:translateY(200%) rotate(45deg) !important;
+}
+.hamburger.is-active .-mid{
+	opacity:0;
+}
+.hamburger.is-active .-bottom{
+	-webkit-transform:translateY(-200%) rotate(135deg) !important;
+	-ms-transform:translateY(-200%) rotate(135deg) !important;
+	transform:translateY(-200%) rotate(135deg) !important;
+}
+.header{
+    width:100vw;
+    height: 10vh;
+	background: rgba(4,115,186,1);
+background: -moz-linear-gradient(left, rgba(4,115,186,1) 0%, rgba(4,163,205,1) 59%, rgba(4,163,205,1) 80%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(4,115,186,1)), color-stop(59%, rgba(4,163,205,1)), color-stop(80%, rgba(4,163,205,1)));
+background: -webkit-linear-gradient(left, rgba(4,115,186,1) 0%, rgba(4,163,205,1) 59%, rgba(4,163,205,1) 80%);
+background: -o-linear-gradient(left, rgba(4,115,186,1) 0%, rgba(4,163,205,1) 59%, rgba(4,163,205,1) 80%);
+background: -ms-linear-gradient(left, rgba(4,115,186,1) 0%, rgba(4,163,205,1) 59%, rgba(4,163,205,1) 80%);
+background: linear-gradient(to right, rgba(4,115,186,1) 0%, rgba(4,163,205,1) 59%, rgba(4,163,205,1) 80%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0473ba', endColorstr='#04a3cd', GradientType=1 );
+	
+}
+#btn-menu{
+	display:none;
+}
+.header label{
+	display: none;
+	width :1px;
+	height:1px;
+	padding:1px;
+}
+
+@media only screen and (max-width: 981px) {  
+	.header label{
+		display: block;
+	}
+	#menu{
+		position: absolute;
+		background: rgba(4,115,186,1);
+background: -moz-linear-gradient(left, rgba(4,115,186,1) 0%, rgba(4,163,205,1) 59%, rgba(4,163,205,1) 80%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(4,115,186,1)), color-stop(59%, rgba(4,163,205,1)), color-stop(80%, rgba(4,163,205,1)));
+background: -webkit-linear-gradient(left, rgba(4,115,186,1) 0%, rgba(4,163,205,1) 59%, rgba(4,163,205,1) 80%);
+background: -o-linear-gradient(left, rgba(4,115,186,1) 0%, rgba(4,163,205,1) 59%, rgba(4,163,205,1) 80%);
+background: -ms-linear-gradient(left, rgba(4,115,186,1) 0%, rgba(4,163,205,1) 59%, rgba(4,163,205,1) 80%);
+background: linear-gradient(to right, rgba(4,115,186,1) 0%, rgba(4,163,205,1) 59%, rgba(4,163,205,1) 80%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0473ba', endColorstr='#04a3cd', GradientType=1 );
+		width:100vw;
+		height:100vh;
+		margin-left:-100vw;
+        transition: all 0.25s;
+        z-index: 100;
+	}
+	#menu ul{
+		flex-direction: column;
+		margin-top: 10vh;
+		background-color: white;
+		border: 2px solid white;
+		justify-content: center;
+		text-align: center;
+		margin-left: 5vw;
+		margin-right: 5.5vw;
+		height: 85vh;
+		box-shadow: rgba(0, 0,0, 3) ;
+		
+	}
+	#menu li{
+		padding-top: 3vh;
+		padding-bottom: 3vh;
+		color:  rgba(242,90,161,1);
+	}
+	#btn-menu:checked ~ #menu{
+		margin-left:0vw;
+    }
+    #btn-menu{
+        display: none;
+	}
+	#menu a{
+		font-size: 2.5em;
+	}
+}
+@media only screen and (max-width: 426px) {  
+	#slider{
+		padding-top: 50vh;
+	}
+}

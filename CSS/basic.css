@@ -1,0 +1,498 @@
+#prev {
+	animation: finally 0.5s ease-in 7s forwards;
+}
+@keyframes finally{
+	0%{}
+	90%{}
+	100%{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+body {
+	background-color: black;
+	margin-top: 0;
+	margin-left: 0;
+}
+
+.ult {
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	visibility: none;
+	opacity: 0;
+	animation: RES forwards 1s;
+	z-index: 5;
+	margin-left: 31%;
+	margin-top: 2.5%;
+}
+.ult:nth-child(1){
+	animation-delay: 0s;
+}
+.ult:nth-child(2){
+	animation-delay: 1s;
+}
+.ult:nth-child(3){
+	animation-delay: 2s;
+}
+@keyframes RES {
+	0%{
+		opacity: 0;
+		visibility: none;
+	}
+	100%{
+		opacity: 1;
+		visibility: all;
+	}
+}
+.Coso {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
+.r5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: Rombo 3s ease-in 5s forwards;
+    opacity: 0;
+    
+}
+
+.r4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 50vw;
+    height: 50vw;
+    background-color: #0473BA;
+}
+
+.r3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 37.5vw;
+    height: 37.5vw;
+    background-color: #ed8524;
+}
+
+.r2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    height: 25vw;
+    background-color: #04A3CD;
+}
+
+.r1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12.25vw;
+    height: 12.25vw;
+    background-color: #de2c76;
+}
+
+@keyframes Rombo {
+    0% {
+        transform: scale3d(0, 0, 1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale3d(20, 20, 1);
+        opacity: 1;
+    }
+    100%{
+		opacity: 0;
+		visibility: none;
+	}
+}
+#name {
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	color: white;
+	visibility: all;
+	animation: Valoranta 7s ease-in 7.5s forwards;
+	margin-top: 20%;
+	font-size: 5em;
+	font-family: "Valor";
+}
+@keyframes Valoranta {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100%{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+@font-face {
+	font-family: "Valor";
+	src: url(../media/VALORANT.otf), url(../media/VALORANT.ttf);
+}
+span:nth-child(1):after {
+	content: "X";
+	animation: codexG 2s ease-in 8s forwards;
+	font-family: "Valor";
+}
+span:nth-child(2):after {
+	content: "H";
+	animation: codexE 2s ease-in 8s forwards;
+	font-family: "Valor";
+}
+span:nth-child(3):after {
+	content: "8";
+	animation: codexT 2s ease-in 8s forwards;
+	font-family: "Valor";
+}
+span:nth-child(4):after {
+	content: "R";
+	animation: codexA 2s ease-in 8s forwards;
+	font-family: "Valor";
+}
+span:nth-child(5):after {
+	content: "S";
+	animation: codexG2 2s ease-in 8s forwards;
+	font-family: "Valor";
+}
+span:nth-child(6):after {
+	content: "3";
+	animation: codexA2 2s ease-in 8s forwards;
+	font-family: "Valor";
+}
+span:nth-child(7):after {
+	content: "A";
+	animation: codexM 2s ease-in 8s forwards;
+	font-family: "Valor";
+}
+span:nth-child(8):after {
+	content: "U";
+	animation: codexE2 2s ease-in forwards;
+	font-family: "Valor";
+}
+@keyframes codexG {
+	0% {
+		content: "D";
+	}
+	10% {
+		content: "2";
+	}
+	20% {
+		content: "A";
+	}
+	30% {
+		content: "K";
+	}
+	40% {
+		content: "J";
+	}
+	50% {
+		content: "Z";
+	}
+	60% {
+		content: "8";
+	}
+	70% {
+		content: "O";
+	}
+	80% {
+		content: "F";
+	}
+	90% {
+		content: "U";
+	}
+	100% {
+		content: "G";
+	}
+}
+@keyframes codexE {
+	0% {
+		content: "7";
+	}
+	10% {
+		content: "Y";
+	}
+	20% {
+		content: "P";
+	}
+	30% {
+		content: "Q";
+	}
+	40% {
+		content: "3";
+	}
+	50% {
+		content: "E";
+	}
+	60% {
+		content: "X";
+	}
+	70% {
+		content: "A";
+	}
+	80% {
+		content: "C";
+	}
+	90% {
+		content: "H";
+	}
+	100% {
+		content: "E";
+	}
+}
+@keyframes codexT {
+	0% {
+		content: "I";
+	}
+	10% {
+		content: "L";
+	}
+	20% {
+		content: "W";
+	}
+	30% {
+		content: "5";
+	}
+	40% {
+		content: "P";
+	}
+	50% {
+		content: "2";
+	}
+	60% {
+		content: "G";
+	}
+	70% {
+		content: "V";
+	}
+	80% {
+		content: "0";
+	}
+	90% {
+		content: "Q";
+	}
+	100% {
+		content: "T";
+	}
+}
+@keyframes codexA {
+	0% {
+		content: "9";
+	}
+	10% {
+		content: "F";
+	}
+	20% {
+		content: "C";
+	}
+	30% {
+		content: "R";
+	}
+	40% {
+		content: "3";
+	}
+	50% {
+		content: "0";
+	}
+	60% {
+		content: "8";
+	}
+	70% {
+		content: "Y";
+	}
+	80% {
+		content: "Q";
+	}
+	90% {
+		content: "M";
+	}
+	100% {
+		content: "A";
+	}
+}
+@keyframes codexG2 {
+	0% {
+		content: "D";
+	}
+	10% {
+		content: "2";
+	}
+	20% {
+		content: "A";
+	}
+	30% {
+		content: "K";
+	}
+	40% {
+		content: "J";
+	}
+	50% {
+		content: "Z";
+	}
+	60% {
+		content: "8";
+	}
+	70% {
+		content: "O";
+	}
+	80% {
+		content: "F";
+	}
+	90% {
+		content: "U";
+	}
+	100% {
+		content: "G";
+	}
+}
+@keyframes codexA2 {
+	0% {
+		content: "7";
+	}
+	10% {
+		content: "Y";
+	}
+	20% {
+		content: "P";
+	}
+	30% {
+		content: "Q";
+	}
+	40% {
+		content: "3";
+	}
+	50% {
+		content: "E";
+	}
+	60% {
+		content: "X";
+	}
+	70% {
+		content: "A";
+	}
+	80% {
+		content: "C";
+	}
+	90% {
+		content: "H";
+	}
+	100% {
+		content: "A";
+	}
+}
+@keyframes codexM {
+	0% {
+		content: "X";
+	}
+	10% {
+		content: "0";
+	}
+	20% {
+		content: "Z";
+	}
+	30% {
+		content: "Y";
+	}
+	40% {
+		content: "0";
+	}
+	50% {
+		content: "4";
+	}
+	60% {
+		content: "L";
+	}
+	70% {
+		content: "G";
+	}
+	80% {
+		content: "J";
+	}
+	90% {
+		content: "7";
+	}
+	100% {
+		content: "M";
+	}
+}
+@keyframes codexE2 {
+	0% {
+		content: "4";
+	}
+	10% {
+		content: "H";
+	}
+	20% {
+		content: "N";
+	}
+	30% {
+		content: "R";
+	}
+	40% {
+		content: "E";
+	}
+	50% {
+		content: "1";
+	}
+	60% {
+		content: "W";
+	}
+	70% {
+		content: "T";
+	}
+	80% {
+		content: "a";
+	}
+	90% {
+		content: "n";
+	}
+	100% {
+		content: "E";
+	}
+}
+div#body {
+	opacity: 0;
+	visibility: hidden;
+	animation: Appear 1s ease-in 13.5s forwards;
+}
+html{
+	overflow: hidden;
+	animation: Appear 1s ease-in 13.5s forwards;
+
+}
+@keyframes Appear {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    50%{
+    	font-family: "Segoe UI";
+		opacity: 1;
+		color: white;
+		visibility: visible;
+	}
+    100%{
+    	font-family: "Segoe UI";
+		opacity: 1;
+		color: white;
+		visibility: visible;
+		overflow: visible;
+	}
+}
