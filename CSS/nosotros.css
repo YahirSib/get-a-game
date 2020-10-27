@@ -315,8 +315,12 @@ section{
   font-family: "Valor";
   src: url(../media/VALORANT.otf), url(../media/VALORANT.ttf);
 }
+@font-face {
+  font-family: "Valor2";
+  src: url(../media/rVALORANT.otf), url(../media/rVALORANT.ttf);
+}
 .XD2{
-  font-family: "Valor";
+  font-family: "Valor2";
   font-size: 30px;
   color: white;
 }
