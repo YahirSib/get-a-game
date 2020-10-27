@@ -1,0 +1,253 @@
+body {
+  font-family: segoe ui;
+}
+h1 {
+  font-size: 20px;
+  margin-bottom: 2.5%;
+}
+.damn {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #04A3CD;
+  text-align: center;
+}
+.damn#a {
+  margin-top: -7.5%;
+}
+div#srry {
+  position: absolute;
+  width: 80%; 
+  height: 90%;
+  background-color: white;
+  left: 10%;
+  opacity: 0.4;
+  top: 80%;
+  z-index: 5;
+}
+form {
+  text-align: center;
+  position: absolute;
+  width: 80%; 
+  height: 80%;
+  font-weight: bold;
+  left: 27.5%;
+  top: 100%;
+  z-index: 15;
+}
+input,
+span,
+label,
+textarea {
+  font-family: 'Segoe UI', sans-serif;
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  font-size: 15px;
+  margin-left: 20%;
+  position: relative;
+}
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+/* Question */
+
+input.question,
+textarea.question {
+  font-size: 25px;
+  font-weight: 300;
+  border-radius: 2px;
+font-weight: bold;
+color: white;
+  margin: 0;
+  border: none;
+  width: 80%;
+  background: rgba(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden; /* Hack to make "rows" attribute apply in Firefox. */
+}
+/* Underline and Placeholder */
+
+input.question + label,
+textarea.question + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 10%;
+  border-top: 1.5px solid red;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+  height: 0px;
+}
+
+input.question:focus + label,
+textarea.question:focus + label {
+  width: 60%;
+}
+
+input.question:focus,
+input.question:valid {
+  padding-top: 35px;
+}
+
+textarea.question:valid,
+textarea.question:focus {
+  margin-top: 0%;
+}
+input.question:focus + label > span,
+input.question:valid + label > span {
+  top: -75px;
+  font-weight: bold;
+  font-size: 22px;
+  color: black;
+}
+
+textarea.question:focus + label > span,
+textarea.question:valid + label > span {
+  top: -150px;
+  font-size: 15px;
+  color: #333;
+}
+
+input.question:valid + label,
+textarea.question:valid + label {
+  border-color: #4dff00;
+}
+
+input.question:invalid,
+textarea.question:invalid {
+  box-shadow: none;
+}
+
+input.question + label > span,
+textarea.question + label > span {
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  color: orange;
+  font-weight: bold;
+  font-size: 20px;
+  top: -45px;
+  left: 0px;
+  z-index: -1;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+input[type="submit"] {
+  -webkit-transition: opacity 0.2s ease, background 0.2s ease;
+  transition: opacity 0.2s ease, background 0.2s ease;
+  display: block;
+  opacity: 0;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  cursor: pointer;
+  left: 25%;
+  font-weight: bold;
+  background-color: #ed8524;
+  border: solid white 2px;
+  transition: 0.25s ease-in-out; 
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  border: solid #ed8524 2px;
+  color: #ed8524;
+}
+
+input[type="submit"]:active {
+  background: #999;
+}
+
+input.question:valid ~ input[type="submit"], textarea.question:valid ~ input[type="submit"] {
+  -webkit-animation: appear 1s forwards;
+  animation: appear 1s forwards;
+}
+
+input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input[type="submit"] {
+  display: none;
+}
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+header{
+  width: 100vw;
+  height: 90vh;
+  background-image: url("../media/bgc.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  z-index: 10;
+}
+header .textos{
+  margin-top: 15vh;
+}
+
+header .titulo{
+  font-size: 11vh;
+  font-family: "Valor";
+}
+@font-face {
+  font-family: "Valor";
+  src: url(../media/VALORANT.otf), url(../media/VALORANT.ttf);
+}
+.subtitulo{
+  font-size: 3.5vh;
+  font-weight: 300;
+  margin-bottom: 5vh;
+}
+
+footer{
+  padding: 2vh 0;
+  background-color: black;
+  color:white;
+  text-align: center;
+}
+.textos-footer{
+  grid-column: 1/-1;
+}
+[class^="footer-item"] a{
+  color: white;
+  font-size: 30px;
+}
+
+[class^="footer-item"] {
+  grid-column: span 3;
+}
+.gridF{
+  display: grid;
+  grid-template-columns: repeat(12 , 1fr);
+  width: 95vw;
+  height: 30vh;
+  margin: auto;
+  gap: 10px;
+  overflow: hidden;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.subtitulo2{
+  font-size: 5vh;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.texto2{
+  font-family: "Valor";
+}
